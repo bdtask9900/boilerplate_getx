@@ -87,4 +87,22 @@ class StorageService extends GetxService{
   // static String getUserData() {
   //   return LocalStorageService.getString(_userKey);
   // }
+
+/*class StorageService extends GetxService {
+  static StorageService get to => Get.find();
+  late final SharedPreferences _prefs;
+
+  Future<StorageService> init() async {
+      _prefs = await SharedPreferences.getInstance();
+      return this;
+  }
+
+  Future<bool> setString(String key, String value) async {
+      return await _prefs.setString(key, value);
+  }
+
+  // Other methods for retrieving data
+  // ...
+  // ...
+}*/
 }
